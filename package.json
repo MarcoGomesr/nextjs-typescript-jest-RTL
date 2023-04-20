@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --dir src",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@next/font": "13.3.0",
@@ -32,11 +34,16 @@
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-testing-library": "^5.10.3",
+    "husky": "^8.0.3",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "ts-jest": "^29.1.0",
     "typescript": "5.0.4"
+  },
+  "lint-staged": {
+    "*.(tsx|ts)": "eslint --cache --fix",
+    "*": "prettier --write --ignore-unkown"
   }
 }
