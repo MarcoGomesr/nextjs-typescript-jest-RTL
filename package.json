@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint --dir src",
     "test": "jest",
+    "test:ci": "jest --coverage --silent --ci",
     "prepare": "husky install",
+    "prettier": "prettier {*,src/*,src/**/*} --write --ignore-unknown",
     "lint-staged": "lint-staged"
   },
   "dependencies": {
