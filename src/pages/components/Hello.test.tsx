@@ -7,4 +7,3 @@ it('should return the string "Hello World"', () => {
   const myElement = screen.getByText("Hello World")
   expect(myElement).toBeInTheDocument()
 })
-

@@ -33,6 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
     "eslint": "8.38.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-testing-library": "^5.10.3",
@@ -46,6 +47,6 @@
   },
   "lint-staged": {
     "*.(tsx|ts)": "eslint --cache --fix",
-    "*": "prettier --write --ignore-unknown"
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

@@ -9,6 +9,7 @@ module.exports = {
     "plugin:testing-library/react",
     "next",
     "next/core-web-vitals",
+    "prettier",
   ],
   overrides: [],
   parser: "@typescript-eslint/parser",
@@ -19,4 +20,4 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {},
-};
+}
